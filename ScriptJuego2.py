@@ -39,6 +39,11 @@ carros = [
 
 Cerrar = True
 
+pygame.mixer.init()
+pygame.mixer.music.load("sounds/ambient.mp3")  
+pygame.mixer.music.set_volume(0.5) 
+pygame.mixer.music.play(-1) 
+
 while Cerrar:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
